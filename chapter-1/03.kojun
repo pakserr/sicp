@@ -9,8 +9,8 @@ fun sum_squares_two_larger(x y z:
         if (c <= a and c <= b: return c))
     fun sum_squares(a b: square(a) + square(b))
     let smaller = min(x y z)
-    if      (smaller == x: return sum_squares(y z))
-    else if (smaller == y: return sum_squares(x z))
-    else if (smaller == z: return sum_squares(x y)))
+    if (smaller == x: return sum_squares(y z))
+    if (smaller == y: return sum_squares(x z))
+    if (smaller == z: return sum_squares(x y)))
 
 print(sum_squares_two_larger(1 2 3)) // "13"
