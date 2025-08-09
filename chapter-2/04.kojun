@@ -1,13 +1,13 @@
 // Exercise 2.4
 
-fun pair(x y:
-    fun (m: m(x y)))
+fun pair(x, y:
+    fun (m: m(x, y)))
 
 fun head(z:
-    z(fun (p q: p)))
+    z(fun (p, q: p)))
 
 fun tail(z:
-    z(fun (p q: q)))
+    z(fun (p, q: q)))
 
-print(head(pair(1 2))) // "1"
-print(tail(pair(1 2))) // "2"
+print(head(pair(1, 2))) // "1"
+print(tail(pair(1, 2))) // "2"
