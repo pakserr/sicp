@@ -2,15 +2,15 @@
 
 fun square(x: x * x)
 
-fun sum_squares_two_larger(x y z:
-    fun min(a b c:
+fun sum_squares_two_larger(x, y, z:
+    fun min(a, b, c:
         if (a <= b and a <= c: return a)
         if (b <= a and b <= c: return b)
         if (c <= a and c <= b: return c))
-    fun sum_squares(a b: square(a) + square(b))
-    let smaller = min(x y z)
-    if (smaller == x: return sum_squares(y z))
-    if (smaller == y: return sum_squares(x z))
-    if (smaller == z: return sum_squares(x y)))
+    fun sum_squares(a, b: square(a) + square(b))
+    let smaller = min(x, y, z)
+    if (smaller == x: return sum_squares(y, z))
+    if (smaller == y: return sum_squares(x, z))
+    if (smaller == z: return sum_squares(x, y)))
 
-print(sum_squares_two_larger(1 2 3)) // "13"
+print(sum_squares_two_larger(1, 2, 3)) // "13"

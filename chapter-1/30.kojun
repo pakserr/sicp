@@ -1,6 +1,6 @@
 // Exercise 1.30
 
-fun sum(a b term next:
+fun sum(a, b, term, next:
     var result = 0
     while (a <= b:
         result += term(a)
@@ -9,11 +9,11 @@ fun sum(a b term next:
 
 fun inc(n: n + 1)
 
-fun sum_integers(a b:
-    sum(a b (fun (x: x)) inc))
+fun sum_integers(a, b:
+    sum(a, b, fun (x: x), inc))
 
-fun sum_cubes(a b:
-    sum(a b (fun (x: x * x * x)) inc))
+fun sum_cubes(a, b:
+    sum(a, b, fun (x: x * x * x), inc))
 
-print(sum_integers(1 10)) // "55"
-print(sum_cubes(1 10))    // "3025"
+print(sum_integers(1, 10)) // "55"
+print(sum_cubes(1, 10))    // "3025"
